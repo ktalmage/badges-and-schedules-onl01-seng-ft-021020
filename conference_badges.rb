@@ -13,9 +13,10 @@ end
   
 def assign_rooms(speakers)
   speakers.map.with_index do |name, index|
-    "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+    "Hello, #{name}! You'll be assigned to room #{index }!"
   end
 end
+puts assign_rooms(speakers)
 
 def printer(attendees)
   batch_badge_creator(attendees).map do |person|
