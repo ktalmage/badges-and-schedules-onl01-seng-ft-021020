@@ -16,7 +16,8 @@ def assign_rooms(speakers)
     "Hello, #{name}! You'll be assigned to room #{index }!"
   end
 end
-puts assign_rooms(speakers)
+speakers = []
+puts assign_rooms()
 
 def printer(attendees)
   batch_badge_creator(attendees).map do |person|
